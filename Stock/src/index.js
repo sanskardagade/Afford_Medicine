@@ -152,8 +152,5 @@ app.use((err, req, res, next) => {
 
 app.listen(PORT, HOST, () => {
     console.log(`Server running at http://${HOST}:${PORT}`);
-    console.log('Available endpoints:');
-    console.log('- GET /health');
-    console.log('- GET /stocks/:ticker?minutes=<number>&aggregation=average');
-    console.log('- GET /stockcorrelation?minutes=<number>&ticker=<ticker1>&ticker=<ticker2>');
+    
 });

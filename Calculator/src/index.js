@@ -6,7 +6,6 @@ const app = express();
 const PORT = 9876;
 const MAX_WINDOW = 10;
 const TIMEOUT_MS = 500;
-
 app.use(cors());
 app.use(express.json());
 
@@ -94,5 +93,5 @@ app.get('/numbers/:type', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+    console.log(`Server is running on http://localhost:${PORT}`);
 }); 
